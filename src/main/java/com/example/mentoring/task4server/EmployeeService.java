@@ -44,8 +44,8 @@ public class EmployeeService {
         return Arrays.stream(employeesSalariesFromJson).collect(toList());
     }
 
-    public List<Employee> getEmployees(int fromIndex, int toIndex) {
-        return employees.subList(fromIndex, toIndex);
+    public List<Employee> getEmployees() {
+        return employees;
     }
 
     public int getEmployeeSalary(String employeeName) {

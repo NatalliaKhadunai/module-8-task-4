@@ -15,8 +15,8 @@ public class EmployeeController {
     private EmployeeService employeeService;
 
     @RequestMapping("/employee")
-    public List<Employee> getEmployees(@RequestParam int fromIndex, @RequestParam int toIndex) {
-        return employeeService.getEmployees(fromIndex, toIndex);
+    public List<Employee> getEmployees() {
+        return employeeService.getEmployees();
     }
 
     @RequestMapping("/employee/{employeeName}/salary")
